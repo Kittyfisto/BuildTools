@@ -1,16 +1,15 @@
 ﻿using System.Reflection;
-using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("BuildTools")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyTitle("GenerateRedirects")]
+[assembly: AssemblyDescription("Patches App.config files")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("BuildTools")]
-[assembly: AssemblyCopyright("Copyright ©  2018")]
+[assembly: AssemblyProduct("GenerateRedirects")]
+[assembly: AssemblyCopyright("Copyright © Simon Mießler 2018")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -20,7 +19,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("69944f58-6661-4902-a25f-09b8536d560d")]
+[assembly: Guid("3076ae8b-d622-4ef7-9f5f-d8e545b3b9b1")]
 
 // Version information for an assembly consists of the following four values:
 //
