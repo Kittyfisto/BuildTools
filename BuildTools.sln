@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.27703.2035
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenerateRedirects", "GenerateRedirects\GenerateRedirects.csproj", "{3076AE8B-D622-4EF7-9F5F-D8E545B3B9B1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zip", "Zip\Zip.csproj", "{C48C1CC7-DA6D-44F2-873D-F9EBE2D86CB8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{3076AE8B-D622-4EF7-9F5F-D8E545B3B9B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3076AE8B-D622-4EF7-9F5F-D8E545B3B9B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3076AE8B-D622-4EF7-9F5F-D8E545B3B9B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C48C1CC7-DA6D-44F2-873D-F9EBE2D86CB8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C48C1CC7-DA6D-44F2-873D-F9EBE2D86CB8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C48C1CC7-DA6D-44F2-873D-F9EBE2D86CB8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C48C1CC7-DA6D-44F2-873D-F9EBE2D86CB8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
