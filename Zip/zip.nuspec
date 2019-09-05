@@ -7,7 +7,6 @@
     <owners>Simon Mießler</owners>
     <licenseUrl>https://github.com/Kittyfisto/BuildTools/blob/master/LICENSE</licenseUrl>
     <projectUrl>https://github.com/Kittyfisto/BuildTools/</projectUrl>
-    <iconUrl></iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Command line application to create/manipulate zip archives</description>
     <releaseNotes></releaseNotes>
