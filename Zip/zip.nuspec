@@ -16,6 +16,6 @@
     </dependencies>
   </metadata>
   <files>
-    <file src="..\bin\Release\Zip2.exe" target="tools" />
+    <file src="..\bin\Release\Zip.exe" target="tools" />
   </files>
 </package>
