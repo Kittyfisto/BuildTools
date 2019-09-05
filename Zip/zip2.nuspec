@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>Zip.CLI</id>
+    <version>$version$</version>
+    <authors>Simon Mießler</authors>
+    <owners>Simon Mießler</owners>
+    <licenseUrl>https://github.com/Kittyfisto/BuildTools/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/Kittyfisto/BuildTools/</projectUrl>
+    <iconUrl></iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Command line application to create/manipulate zip archives</description>
+    <releaseNotes></releaseNotes>
+    <copyright>Copyright Simon Mießler 2019</copyright>
+    <tags>.NET ZIP CLI</tags>
+    <dependencies>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="bin\Release\Zip2.exe" target="tools" />
+  </files>
+</package>
