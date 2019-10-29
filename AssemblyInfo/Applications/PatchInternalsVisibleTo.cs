@@ -119,7 +119,7 @@ namespace AssemblyInfo.Applications
 				assemblyInfo = ChangePublicKeyToken(assemblyInfo, assembly, publicKey);
 			}
 
-			File.WriteAllText(assemblyInfoPath, assemblyInfo.ToString());
+			File.WriteAllText(assemblyInfoPath, assemblyInfo.ToString(), new UTF8Encoding(true));
 		}
 
 		[Pure]
