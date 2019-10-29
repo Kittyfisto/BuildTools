@@ -58,6 +58,7 @@
     <None Include="App.config" />
     <None Include="ilmerge.cmd" />
     <None Include="packages.config" />
+    <None Include="zip.nuspec" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

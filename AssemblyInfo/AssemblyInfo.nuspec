@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>AssemblyInfo.CLI</id>
+    <version>$version$</version>
+    <authors>Simon Mießler</authors>
+    <owners>Simon Mießler</owners>
+    <licenseUrl>https://github.com/Kittyfisto/BuildTools/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/Kittyfisto/BuildTools/</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Command line application to manipulate AssemblyInfo.cs files</description>
+    <releaseNotes></releaseNotes>
+    <copyright>Copyright Simon Mießler 2019</copyright>
+    <tags>.NET AssemblyInfo CLI</tags>
+    <dependencies>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="..\bin\Release\AssemblyInfo.exe" target="tools" />
+  </files>
+</package>
