@@ -19,21 +19,7 @@ namespace AssemblyInfo.Applications
 			else
 				publicKey = options.PublicKey;
 
-			if (!string.IsNullOrEmpty(publicKey))
-			{
-				Console.WriteLine("Changing PublicKeyToken of references to '{0}' to '{1}'",
-				                  string.Join(", ", options.Assemblies),
-				                  publicKey);
-			}
-			else
-			{
-				Console.WriteLine("Removing PublicKeyToken of references to '{0}'",
-				                  string.Join(", ", options.Assemblies));
-			}
-
 			ChangePublicKeyToken(options.AssemblyInfoPath, options.Assemblies, publicKey);
-
-			Console.WriteLine("Changes written to: {0}", options.AssemblyInfoPath);
 		}
 
 		/// <summary>
@@ -112,14 +98,23 @@ namespace AssemblyInfo.Applications
 		                                         IEnumerable<string> assemblies,
 		                                         string publicKey)
 		{
-			var assemblyInfo = ReadFile(assemblyInfoPath);
+			var originalAssemblyInfo = ReadFile(assemblyInfoPath);
+			var assemblyInfo = originalAssemblyInfo;
 
 			foreach (var assembly in assemblies)
 			{
 				assemblyInfo = ChangePublicKeyToken(assemblyInfo, assembly, publicKey);
 			}
 
-			File.WriteAllText(assemblyInfoPath, assemblyInfo.ToString(), new UTF8Encoding(true));
+			if (originalAssemblyInfo != assemblyInfo)
+			{
+				File.WriteAllText(assemblyInfoPath, assemblyInfo.ToString(), new UTF8Encoding(true));
+				Console.WriteLine("Changes written to: {0}", assemblyInfoPath);
+			}
+			else
+			{
+				Console.WriteLine("No changes necessary");
+			}
 		}
 
 		[Pure]
