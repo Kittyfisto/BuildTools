@@ -10,8 +10,7 @@ namespace AssemblyInfo
 		{
 			try
 			{
-				Parser.Default.ParseArguments<PatchInternalsVisibleToOptions>(args)
-				      .WithParsed<PatchInternalsVisibleToOptions>(PatchInternalsVisibleTo.Run);
+				Run(args);
 
 				return 0;
 			}
@@ -23,8 +22,14 @@ namespace AssemblyInfo
 			catch (Exception e)
 			{
 				Console.WriteLine("ERROR: {0}", e);
-				return -1;
+				return -2;
 			}
+		}
+
+		private static void Run(string[] args)
+		{
+			Parser.Default.ParseArguments<PatchInternalsVisibleToOptions>(args)
+			      .WithParsed<PatchInternalsVisibleToOptions>(PatchInternalsVisibleTo.Run);
 		}
 	}
 }
