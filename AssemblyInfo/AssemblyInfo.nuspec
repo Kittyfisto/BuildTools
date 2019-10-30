@@ -16,6 +16,6 @@
     </dependencies>
   </metadata>
   <files>
-    <file src="..\bin\Release\AssemblyInfo.exe" target="tools" />
+    <file src="..\bin\Release\BuildTool.exe" target="tools" />
   </files>
 </package>
